@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="files/textfile.css">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/367278d2a4.css" crossorigin="anonymous">
+</head>
+<body>
+    
+    
+    <main>
+
+   <center> 
+        <section>
+            <h1> Welcome to Maxifitcher Pyrotech 🙂</h1> 
+           <a href="https://www.youtube.com/@maxifitcherpyrotech"><img class="img" src="files/maxifitcher.jpeg"/></a> 
+
+           <br><br><br>
+
+           <h3>Listen to the Whatsapp Ringtone:</h3>
+           <audio controls>
+            <source src="files\TimiNai Aau  BGM Ringtone.mp3" type="audio/mpeg">
+            Whatsapp Ringtone
+          </audio>
+          
+          <br><br><br><br><br>
+
+          <a href="files/TimiNai Aau  BGM Ringtone.mp3" download="TimiNai Aau  BGM Ringtone by Maxifitcher Pyrotech" onclick="openPopup">
+            <input type="button" value="Download Ringtone" class="download">
+        </a>
+
+            <br><br><br><br><br><br><br>
+            <h4>Subscribe to the Channel</h4> 
+            <a href="https://www.youtube.com/@maxifitcherpyrotech"><img src="files/youtube.jpg"/></a>
+        </section>
+        
+        <div id="popup" style="display: none;">
+            <h2>Subscribe to the Channel!</h2>
+            <p>Click <a href="https://www.youtube.com/@maxifitcherpyrotech">here</a> to subscribe.</p>
+        </div>
+
+        
+            <div class="buttons">
+                <button class="btn-exclamation popup-btn" onclick="openPopup" data-popup="exclamation">Support the channel</button>
+            </div>
+        </main>
+        
+        <div id="popupContainer" style="position: fixed; top: 0; left: 0">
+        </div>
+
+        <script>
+            function openPopup() {
+                document.getElementById("popup").style.display = "block";
+            }
+
+            function reloadPage() {
+                location.reload();
+            }
+
+            window.onload = function() {
+                var button = document.querySelector(".popup-btn");
+                button.onclick = openPopup;
+
+                var downloadButton = document.querySelector(".download");
+                downloadButton.onclick = reloadPage;
+            };
+        </script>
+
+    </center>
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>
